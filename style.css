@@ -1,0 +1,199 @@
+:root {
+    --primary: rgba(242,235,225,0.8);
+    --light: #fff;
+    --dark: #333;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+html {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--dark);
+}
+body {
+    background-color:var(--primary);
+    margin: 30px 50px ;
+    /* line-height: 1.4; */
+}
+header {
+    display: grid;
+    grid-template-areas: 
+    "Itech  DenimJeans DenimJeans DenimJeans icons" ; 
+    align-items: baseline;
+    color: #333;
+}
+h1 {
+    grid-area: Itech;
+}
+h3 {
+    grid-area: DenimJeans;
+    align-content: flex-start;
+}
+.icons {
+    grid-area: icons;
+    text-align: end;
+}
+.top-container {
+    display: grid;
+    grid-template-areas: 
+    "nav main-container";
+    color: #333;
+}
+.nav {
+    grid-area: nav;
+    position: fixed;
+    height: 100%;
+    width: 150px;
+
+}
+.nav a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    line-height: 3rem;
+    text-align: center;
+}
+.nav a:hover {
+    color: var(--dark);
+    border: 2px solid #333;
+    border-radius: 25px;
+    padding: 3px;
+    cursor:pointer;
+}
+.main-container {
+    grid-area: main-container;
+}
+.main-container {
+    grid-template-areas: 
+    "first-line"
+    "second-line"
+    "third-line"
+    "forth-line"
+    "fifth-line";
+    margin-left: 15px;
+    
+}
+.first-line{
+    grid-area: first-line;
+    grid-gap: 20px;
+    background-image: url(https://images.ctfassets.net/hbmwn5pbkdff/6TuhzBcKbtaBdOmX6f3FeU/30f2a89795577dfa843788bc8a692fb0/CROPPED_BRAND_VOGUE_SPAIN_3-compressed.jpg?w=2000);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding:20px;
+    
+}
+.first-line a {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+}
+.second-line {
+    grid-area: second-line;
+    grid-gap: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+   
+}
+.second-line p {
+    margin: 8px 0;
+}
+.third-line {
+    grid-area: third-line;
+    grid-gap: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.third-line p {
+    margin: 8px 0;
+}  
+    
+.forth-line {
+    grid-area: forth-line;
+    background-color: black;
+    color: var(--primary);
+    padding: 2rem; 
+    line-height: 2;
+    margin: 15px 100px 15px 0;
+}
+.btn2 {
+    background-color:tomato;
+    border-radius: 0.4rem;
+    color: var(--primary);
+    padding: 5px;
+    border: none;
+    margin: 5px;
+}
+.fifth-line {
+    grid-area: fifth-line;
+}
+.fifth-line-inner {
+    display: grid;
+    grid-template-areas: "contact about store";
+    align-items: baseline;
+}
+.contact {
+    grid-area: contact;
+    line-height: 3rem;
+    text-align: center;
+}
+.btn3 {
+    background-color:tomato;
+    color: white;
+    border: none;
+    padding: 9px;
+    width: 270px;
+}
+.input-place {
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 9px;
+    width: 250px;
+}
+.about {
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+}
+.about a {
+    color: black;
+    text-decoration: none;
+    line-height: 1.6rem;
+    text-align: center;  
+}
+.about a:hover {
+    background-color: var(--dark);
+    color: white;
+    border-radius: 0.8rem;
+    margin-top: 5px;
+}
+.store {
+    grid-area: store;
+    line-height: 1.5rem;
+}
+footer p {
+    background-color: var(--dark);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
